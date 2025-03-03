@@ -1,0 +1,150 @@
+@font-face{
+  font-family: "Super";
+  src: url(./text/New\ Super\ Mario\ Font\ U.ttf);
+}
+@font-face{
+  font-family: "Teclas";
+  src: url(./text/AldotheApache.ttf);
+}
+
+*{
+  border: none;
+}
+
+body{
+  background-image: url(./image/fondo2.png);
+  background-size: contain;
+  background-position: center;
+  height: 100dvh;
+}
+
+h1{
+  font-family: "super";
+  font-size: 7em;
+  text-shadow: 
+  6px 10px 0px black,
+  -3px 0px 0px black,
+  0px -3px 0px black,
+  3px 0px 0px black,
+  0px 3px 0px black,
+  -3px -3px 0px black
+
+ 
+}
+
+.s, .t {
+  color: #009BD9;
+
+}
+
+.u, .r, .a{
+color: #FCCF00;
+}
+
+.p, .c{
+  color: #E62310;
+
+}
+
+.e,  .l, .o{
+  color: #44AF35;
+
+}
+
+img{
+  width: 180px;
+  
+}
+
+.botones{
+  font-family: "Teclas";
+  padding: auto;
+  font-size: 1.3rem;
+  text-shadow:
+  0px 1px 0px #423E33,
+  -1px 0px 0px #A0A19B,
+  -1px -1px 0px #9da47758 ;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #E9C508;
+  box-shadow:
+  0px -2px 0px #F6EB0D,
+  -2px 0px 0px #B79700,
+  -1px -1px 0px #F6EB0D,
+  0px 2px 0px #3C2D00,
+  -1px 1px 0px #B79700,
+  2px 0px 0px #977D04,
+  1px 1px 0px #3C2D00,
+  1px 1px 0px #977D04;
+  transition-property: all;
+  transition-duration: 0.2s;
+  
+}
+
+.botones:hover{
+  background-color: #ecd664;
+  scale: 1.2;
+  transition-duration: 0.3s;
+}
+
+.fondo{
+  background-image: url(./image/fondo_ladrillos.png);
+  background-size: cover;
+  background-position: center;
+  width: 50dvh;
+  height: 50dvh;
+}
+
+.pantalla{
+  background: rgb(213,160,37);
+  background: radial-gradient(circle, rgba(213,160,37,1) 58%, rgba(99,74,17,1) 90%);
+  font-family: "Teclas";
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-shadow:
+  0px 1px 0px #423E33,
+  -1px 0px 0px #A0A19B,
+  -1px -1px 0px #9da47758 ;
+  letter-spacing: 0.4rem;
+  border: 4px solid black;
+  border-radius: 300px;
+  margin-bottom: 10px;
+  height: 50px;
+  
+
+}
+
+.bicho{
+  width: 100px;
+  position: absolute;
+  padding-top: 33dvh;
+  margin-left: 28dvw;
+  animation-name: animacion;
+  animation-duration: 20s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.tortuga{
+  width: 100px;
+  position : absolute;
+  margin-left: 100px;
+  animation-name: ani-tortu;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animacion {
+  to{margin-left: 51dvw;
+  }
+}
+
+@keyframes ani-tortu {
+  to{margin-top: 82vh;
+  }
+}
+
